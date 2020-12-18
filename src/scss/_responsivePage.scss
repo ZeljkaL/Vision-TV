@@ -1,0 +1,319 @@
+@media (min-width: 768px) {
+  .movie-page {
+    .movie-content {
+      width: 90%;
+
+      .about-movie {
+        //   flex-direction: row;
+
+        width: 100%;
+
+        img {
+          height: 400px;
+          width: 320px;
+        }
+        .movie-description {
+          width: 60%;
+
+          p {
+            font-family: $titleFont;
+            font-size: 18px;
+          }
+        }
+      }
+      .movie-trailer {
+        margin-top: 30px;
+
+        h1 {
+          font-family: $titleFont;
+          font-size: 30px;
+        }
+        video {
+          width: 600px;
+        }
+        h4 {
+          font-size: 20px;
+          font-family: $titleFont;
+          width: 500px;
+        }
+      }
+      .movie-details {
+        // flex-direction: row;
+
+        .movie-left {
+          //    width: 40%;
+
+          h1 {
+            font-size: 20px;
+          }
+          .movie-cast {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            .cast-card {
+              width: 200px;
+              height: 230px;
+
+              img {
+                width: 150px;
+                height: 150px;
+              }
+              p {
+                font-family: $titleFont;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .movie-right {
+          width: 100%;
+
+          justify-content: space-evenly;
+          align-items: left;
+          h1 {
+            font-family: $titleFont;
+          }
+          p {
+            //  font-family: $titleFont;
+
+            font-size: 15px;
+            text-align: left;
+            align-items: left;
+            //    background: red;
+            display: flex;
+            justify-content: center;
+          }
+          .storyline {
+            font-size: 17px;
+            width: 70%;
+            //    padding-right: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MEDIUM SCREEN
+
+@media (min-width: 1024px) {
+  .movie-page {
+    .movie-hero {
+      height: 600px;
+      .layer-over {
+        height: 600px;
+
+        .follow-us {
+          font-family: $titleFont;
+
+          margin-top: 100px;
+
+          justify-content: flex-end;
+        }
+
+        .movies-nav {
+          position: absolute;
+          background: $navBcg;
+          justify-content: center;
+          margin-top: -500px;
+
+          height: 80px;
+          img {
+            margin-right: 10px;
+            height: 30px;
+            width: 100px;
+            display: flex;
+          }
+          .upcoming-link {
+            margin: 10px;
+            font-size: 15px;
+            display: flex;
+            //      color: RED;
+          }
+          h3 {
+            display: none;
+          }
+        }
+        .active {
+          background: transparent;
+          flex-direction: row;
+        }
+
+        .slider-content {
+          display: block;
+          width: 80%;
+          .movie-hero-card {
+            height: 350px;
+            width: 270px;
+
+            img,
+            .img-layer {
+              height: 350px;
+              width: 270px;
+            }
+            h1 {
+              margin-top: 250px;
+              width: 240px;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+
+    .movie-content {
+      width: 90%;
+
+      .about-movie {
+        flex-direction: row;
+
+        width: 80%;
+
+        img {
+          height: 400px;
+          width: 320px;
+        }
+        .movie-description {
+          width: 60%;
+
+          p {
+            font-family: $titleFont;
+            font-size: 18px;
+          }
+        }
+      }
+      .movie-trailer {
+        margin-top: 60px;
+
+        h1 {
+          font-family: $titleFont;
+          font-size: 35px;
+        }
+        video {
+          width: 700px;
+        }
+        h4 {
+          font-size: 25px;
+          font-family: $titleFont;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+//END OF MEDIUM SCREEN
+
+//LARGE SCREEN
+@media (min-width: 1450px) {
+  .movie-page {
+    .movie-hero {
+      height: 800px;
+      .layer-over {
+        height: 800px;
+
+        .follow-us {
+          font-family: $titleFont;
+
+          margin-top: 100px;
+
+          justify-content: flex-end;
+        }
+
+        .movies-nav {
+          position: absolute;
+          background: $navBcg;
+
+          margin-top: -700px;
+
+          height: 100px;
+          img {
+            margin-right: 50px;
+            height: 50px;
+            width: 120px;
+          }
+          .upcoming-link {
+            margin: 50px;
+            font-size: 18px;
+            // color: rgb(21, 255, 0);
+          }
+        }
+        .slider-content {
+          width: 70%;
+          // display: none;
+          .movie-hero-card {
+            height: 500px;
+
+            img,
+            .img-layer {
+              height: 500px;
+              width: 330px;
+            }
+            h1 {
+              font-size: 20px;
+
+              margin-top: 400px;
+              width: 330px;
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    .movie-content {
+      width: 80%;
+
+      .about-movie {
+        flex-direction: row;
+      }
+      .movie-trailer {
+        margin-top: 100px;
+
+        h1 {
+          font-size: 40px;
+        }
+        video {
+          width: 800px;
+        }
+        h4 {
+          font-size: 27px;
+          width: 500px;
+        }
+      }
+      .movie-details {
+        flex-direction: row;
+
+        .movie-left {
+          width: 40%;
+
+          h1 {
+            font-size: 25px;
+            word-spacing: 5px;
+          }
+        }
+        .movie-right {
+          width: 50%;
+
+          justify-content: flex-start;
+          align-items: flex-start;
+          h1 {
+            font-family: $titleFont;
+          }
+          p {
+            font-family: $titleFont;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 18px;
+          }
+          .storyline {
+            font-size: 23px;
+            padding-right: 40px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+//END OF LARGE SCREEN

@@ -1,0 +1,884 @@
+@media (min-width: 768px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+
+    h1 {
+      color: $titleClr;
+      letter-spacing: 1px;
+      margin: 50px 0 10px 0;
+      font-size: 35px;
+      font-family: $titleFont;
+      //  text-transform: uppercase;
+      //    color: brown;
+    }
+    .hr-line {
+      background: $titleClr;
+      opacity: 0.6;
+      height: 7px;
+      width: 130px;
+    }
+  }
+
+  .movies-nav {
+    .nav-inner {
+      font-family: $titleFont;
+      width: 100%;
+
+      .navbar {
+        a {
+          font-size: 15px;
+        }
+
+        .dropdown {
+          .drop {
+            font-size: 13px;
+          }
+          .drop-content {
+            margin-top: 17px;
+            a {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slider-bcg {
+    width: 100%;
+    height: 500px;
+    .container {
+      margin: 0 auto;
+      width: 90%;
+      .follow-us {
+        margin-top: 60px;
+        justify-content: flex-end;
+        align-items: right;
+      }
+      //CARD - slider segment
+      .card {
+        display: block;
+        height: 300px;
+        width: 160px;
+        img,
+        .black-layer {
+          height: 300px;
+          width: 160px;
+        }
+        .description {
+          margin-top: 220px;
+          .genre {
+            display: none;
+          }
+          .title {
+            font-size: 15px;
+            width: 150px;
+          }
+        }
+      }
+      //END OF CARD
+    }
+  }
+
+  .pages-bcg {
+    //    padding-bottom: 100px;
+    //   flex-direction: row;
+    .movie-premiere-holder {
+      .content {
+        .filter-form {
+          //  flex-direction: row;
+          justify-content: space-around;
+
+          padding: 30px;
+
+          .form-group {
+            select {
+              width: 150px;
+            }
+            label {
+              width: 200px;
+            }
+          }
+        }
+
+        .shoplist-btn {
+          margin-left: 85px;
+        }
+        .visible-list {
+          //   position: absolute;
+
+          //  margin-left: 30%;
+          //    margin-top: -30%;
+          min-height: 50%;
+          width: 500px;
+
+          font-family: $titleFont;
+
+          h1 {
+            margin-bottom: 40px;
+            margin-top: 20px;
+
+            font-size: 40px;
+            //    color: blue;
+          }
+          .sum {
+            width: 600px;
+            font-size: 20px;
+          }
+          .exit-btn {
+            position: absolute;
+            margin-left: 430px;
+          }
+          .one-item {
+            width: 450px;
+            //  padding: 7px;
+
+            display: grid;
+            //       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            //      grid-template-rows: 1fr;
+
+            p {
+              font-size: 20px;
+              display: block;
+              display: none;
+            }
+            .item-name {
+              width: 300px;
+            }
+            .plus-minus {
+              display: flex;
+              display: none;
+              width: 50px;
+            }
+          }
+        }
+
+        //END OF SHOPLIST
+
+        //MOVIELIST
+        .movie-list {
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 1fr;
+
+          //        padding: 100px;
+
+          .movie-card {
+            font-family: $titleFont;
+          }
+        }
+
+        //END OF MOVIE LIST
+      }
+      //END OF LIST CONTENT
+      .upcoming-content {
+        width: 100%;
+
+        .text {
+          width: 100%;
+          p {
+            font-size: 17px;
+            //margin-right: 20px;
+          }
+        }
+
+        //PREMIERRE
+        .premierre {
+          //     flex-direction: row;
+
+          .upcoming-movie-card {
+            height: 350px;
+            width: 270px;
+            margin: 30px;
+
+            img,
+            .img-layer {
+              height: 350px;
+              width: 270px;
+            }
+
+            h3 {
+              margin-top: 250px;
+              width: 260px;
+              font-size: 20px;
+            }
+
+            .btn-read {
+              width: 150px;
+              height: 50px;
+
+              font-size: 17px;
+            }
+          }
+        }
+        //END OD PREMIERE
+      }
+    }
+  }
+  .news {
+    .main-news {
+      .text {
+        p {
+          span {
+            font-family: $titleFont;
+          }
+        }
+      }
+    }
+  }
+
+  .celebrities-bcg {
+    margin-top: 120px;
+
+    //   display: flex;
+
+    .celeb-title {
+      margin-top: -200%;
+    }
+  }
+
+  .footer-bcg {
+    .footer-distributed {
+      flex-direction: row;
+    }
+  }
+}
+
+//MEDIUM SCREEN
+
+@media (min-width: 1024px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+
+    h1 {
+      color: $titleClr;
+      letter-spacing: 1px;
+      margin: 50px 0 10px 0;
+      font-size: 40px;
+      font-family: $titleFont;
+      text-transform: uppercase;
+      // color: blue;
+    }
+    .hr-line {
+      background: $titleClr;
+      opacity: 0.6;
+      height: 7px;
+      width: 130px;
+    }
+  }
+
+  .movies-nav {
+    .nav-inner {
+      font-family: $titleFont;
+
+      width: 100%;
+      padding: 20px;
+
+      img {
+        height: 60px;
+        width: 130px;
+      }
+      .navbar {
+        display: flex;
+        //  overflow: hidden;
+        //    margin-left: 100px;
+        a {
+          font-size: 15px;
+          padding: 15px 10px;
+        }
+
+        .dropdown {
+          .drop {
+            font-size: 15px;
+          }
+          .drop-content {
+            min-width: 170px;
+            margin-left: 10px;
+            margin-top: 40px;
+            a {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .btn {
+        display: flex;
+      }
+      h3 {
+        display: none;
+      }
+    }
+    .active {
+      background: transparent;
+      height: 100px;
+
+      img {
+        display: flex;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 0;
+        width: 70%;
+        a,
+        .dropdown .drop {
+          background: transparent;
+
+          height: 80px;
+          width: 100px;
+          margin: 0;
+          margin: 2px;
+          justify-content: space-around;
+        }
+        .dropdown .drop {
+          width: 260px;
+          margin-bottom: 0;
+        }
+        .dropdown .drop-content {
+          margin-top: 0;
+          width: 120px;
+
+          a {
+            width: 100%;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .slider-bcg {
+    width: 100%;
+    height: 600px;
+    .container {
+      margin: 0 auto;
+      width: 90%;
+      .follow-us {
+        margin-top: 40px;
+        justify-content: flex-end;
+        align-items: right;
+      }
+      //CARD - slider segment
+      .card {
+        display: block;
+        height: 350px;
+        width: 2500px;
+        img,
+        .black-layer {
+          height: 350px;
+          width: 200px;
+        }
+        .description {
+          margin-top: 270px;
+          .genre {
+            display: none;
+          }
+          .title {
+            font-size: 17px;
+            width: 200px;
+          }
+        }
+      }
+      //END OF CARD
+    }
+  }
+
+  .pages-bcg {
+    padding-bottom: 100px;
+    flex-direction: column;
+    .movie-premiere-holder {
+      .content {
+        .filter-form {
+          flex-direction: row;
+          justify-content: center;
+
+          //       padding: 50px;
+
+          .form-group {
+            select {
+              width: 150px;
+            }
+            label {
+              width: 200px;
+            }
+          }
+        }
+
+        .shoplist-btn {
+          margin-left: 140px;
+        }
+        .visible-list {
+          //   position: absolute;
+
+          //  margin-left: 30%;
+          //    margin-top: -30%;
+          //     min-height: 50%;
+          width: 700px;
+
+          //   font-family: $titleFont;
+
+          h1 {
+            margin-bottom: 40px;
+            margin-top: 20px;
+
+            font-size: 40px;
+          }
+          .sum {
+            width: 600px;
+            font-size: 20px;
+          }
+          .exit-btn {
+            position: absolute;
+            margin-left: 570px;
+          }
+          .one-item {
+            width: 600px;
+            //  padding: 7px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+
+            p {
+              font-size: 20px;
+              display: block;
+              //  display: none;
+            }
+            .item-name {
+              width: 300px;
+            }
+            .plus-minus {
+              display: flex;
+              //  display: none;
+              width: 50px;
+            }
+          }
+        }
+        //END OF SHOPLIST
+
+        //MOVIELIST
+        .movie-list {
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          // padding: 100px;
+
+          .movie-card {
+            font-family: $titleFont;
+          }
+        }
+
+        //END OF MOVIE LIST
+      }
+      //END OF LIST CONTENT
+      .upcoming-content {
+        width: 80%;
+
+        .text {
+          width: 95%;
+          p {
+            font-size: 20px;
+            margin-right: 20px;
+          }
+        }
+
+        //PREMIERRE
+        .premierre {
+          flex-direction: row;
+
+          .upcoming-movie-card {
+            height: 350px;
+            width: 270px;
+            margin: 30px;
+
+            img,
+            .img-layer {
+              height: 350px;
+              width: 270px;
+            }
+
+            h3 {
+              margin-top: 250px;
+              width: 260px;
+              font-size: 20px;
+            }
+
+            .btn-read {
+              width: 150px;
+              height: 50px;
+
+              font-size: 17px;
+            }
+          }
+        }
+        //END OD PREMIERE
+      }
+    }
+  }
+
+  .celebrities-bcg {
+    // margin-top: 350px;
+    width: 50%;
+    display: grid;
+    height: 500px;
+
+    .celeb-title {
+      width: 100%;
+      h4 {
+        margin-left: 5px;
+      }
+    }
+    .celebrities-content {
+      width: 100%;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .celeb-title {
+      margin-top: -200%;
+    }
+  }
+
+  .news {
+    padding-left: 100px;
+    .topic-news {
+      justify-content: flex-start;
+      text-align: left;
+      align-items: flex-start;
+
+      h1 {
+        font-family: $titleFont;
+      }
+      .main-news {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: left;
+        width: 90%;
+
+        img {
+          width: 300px;
+          height: 320px;
+        }
+        .text {
+          width: 700px;
+          h2 {
+            font-family: $titleFont;
+            font-size: 25px;
+          }
+
+          p {
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .other-news {
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 90%;
+
+      h2 {
+        font-family: $titleFont;
+        font-size: 25px;
+        text-align: left;
+      }
+      .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  .footer-bcg {
+    .footer-distributed {
+      flex-direction: row;
+    }
+  }
+}
+
+//END OF MEDIUM SCREEN
+
+//LARGE SCREEN
+@media (min-width: 1450px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+
+    h1 {
+      color: $titleClr;
+      letter-spacing: 1px;
+      margin: 50px 0 10px 0;
+      font-size: 40px;
+      font-family: $titleFont;
+      text-transform: uppercase;
+      color: rgb(238, 255, 0);
+    }
+    .hr-line {
+      background: $titleClr;
+      opacity: 0.6;
+      height: 7px;
+      width: 130px;
+    }
+  }
+
+  .movies-nav {
+    .nav-inner {
+      font-family: $titleFont;
+
+      width: 90%;
+      padding: 20px;
+
+      img {
+        height: 60px;
+        width: 130px;
+      }
+      .navbar {
+        //  overflow: hidden;
+        margin-left: 100px;
+        a {
+          font-size: 15px;
+          padding: 20px 40px;
+        }
+
+        .dropdown {
+          .drop {
+            font-size: 15px;
+          }
+          .drop-content {
+            min-width: 190px;
+            margin-left: 20px;
+            margin-top: 60px;
+            a {
+              text-align: left;
+            }
+          }
+        }
+      }
+      .btn {
+        display: flex;
+      }
+    }
+  }
+
+  .slider-bcg {
+    width: 100%;
+    height: 700px;
+    .container {
+      margin: 0 auto;
+      width: 80%;
+      .follow-us {
+        margin-top: 100px;
+        justify-content: flex-end;
+        align-items: right;
+      }
+      //CARD - slider segment
+      .card {
+        display: block;
+        height: $SliderCardheight;
+        width: $SliderCardWidth;
+        img,
+        .black-layer {
+          height: $SliderCardheight;
+          width: $SliderCardWidth;
+        }
+        .description {
+          margin-top: 280px;
+          .genre {
+            display: flex;
+          }
+          .title {
+            font-size: 20px;
+            width: 250px;
+          }
+        }
+      }
+      //END OF CARD
+    }
+  }
+
+  .pages-bcg {
+    padding-bottom: 100px;
+    flex-direction: row;
+    .movie-premiere-holder {
+      .content {
+        .filter-form {
+          flex-direction: row;
+          justify-content: space-around;
+
+          padding: 30px;
+
+          .form-group {
+            select {
+              width: 150px;
+            }
+            label {
+              width: 200px;
+            }
+          }
+        }
+
+        .shoplist-btn {
+          margin-left: 85px;
+        }
+
+        //END OF SHOPLIST
+
+        //MOVIELIST
+        .movie-list {
+          display: grid;
+          grid-template-rows: 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          padding: 70px;
+
+          .movie-card {
+            font-family: $titleFont;
+          }
+        }
+
+        //END OF MOVIE LIST
+      }
+      //END OF LIST CONTENT
+      .upcoming-content {
+        width: 80%;
+
+        .text {
+          width: 95%;
+          p {
+            font-size: 20px;
+            margin-right: 20px;
+          }
+        }
+
+        //PREMIERRE
+        .premierre {
+          flex-direction: row;
+
+          .upcoming-movie-card {
+            height: 350px;
+            width: 270px;
+            margin: 30px;
+
+            img,
+            .img-layer {
+              height: 350px;
+              width: 270px;
+            }
+
+            h3 {
+              margin-top: 250px;
+              width: 260px;
+              font-size: 20px;
+            }
+
+            .btn-read {
+              width: 150px;
+              height: 50px;
+
+              font-size: 17px;
+            }
+          }
+        }
+        //END OD PREMIERE
+      }
+    }
+  }
+  .celebrities-bcg {
+    //  margin-top: 120px;
+
+    //    display: flex;
+    width: 25%;
+    height: 100%;
+    // background: gray;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    .celebrities-content {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      //  background: red;
+    }
+
+    .celeb-title {
+      width: 100%;
+      // background: red;
+      margin-bottom: 100px;
+      //margin-left: -10%;
+      //   margin-top: -300%;
+    }
+  }
+
+  .news {
+    padding-left: 100px;
+    .topic-news {
+      justify-content: flex-start;
+      text-align: left;
+      align-items: flex-start;
+
+      h1 {
+        font-family: $titleFont;
+      }
+      .main-news {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: left;
+
+        img {
+          width: 300px;
+          height: 320px;
+        }
+        .text {
+          width: 700px;
+          h2 {
+            font-family: $titleFont;
+            font-size: 25px;
+          }
+
+          p {
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .other-news {
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      h2 {
+        font-family: $titleFont;
+        font-size: 25px;
+        text-align: left;
+      }
+      .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+  }
+}
+//END OF LARGE SCREEN
