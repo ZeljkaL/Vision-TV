@@ -828,8 +828,8 @@ $bcg: url("../photos/bcg.jpg");
         width: 100%;
         height: 100%;
         .upcoming-movie-card {
-          height: 300px;
-          width: 240px;
+          height: 250px;
+          width: 180px;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -842,8 +842,8 @@ $bcg: url("../photos/bcg.jpg");
           }
           img,
           .img-layer {
-            height: 300px;
-            width: 240px;
+            height: 250px;
+            width: 180px;
 
             position: absolute;
             object-fit: cover;
@@ -854,11 +854,11 @@ $bcg: url("../photos/bcg.jpg");
           h3 {
             color: rgb(247, 247, 247);
             position: absolute;
-            margin-top: 200px;
-            width: 220px;
+            margin-top: 100px;
+            width: 150px;
             text-transform: uppercase;
             text-align: center;
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             letter-spacing: 2px;
             text-shadow: 4px 4px 7px rgb(70, 69, 69);
@@ -992,7 +992,7 @@ $bcg: url("../photos/bcg.jpg");
       width: 100%;
       text-transform: uppercase;
       color: $newsMainTitle;
-
+      font-size: 25px;
       margin: 50px 0 20px 0;
     }
     .main-news {

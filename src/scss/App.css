@@ -1170,8 +1170,8 @@
 }
 
 .pages-bcg .movie-premiere-holder .upcoming-content .premierre .upcoming-movie-card {
-  height: 300px;
-  width: 240px;
+  height: 250px;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,8 +1196,8 @@
 
 .pages-bcg .movie-premiere-holder .upcoming-content .premierre .upcoming-movie-card img,
 .pages-bcg .movie-premiere-holder .upcoming-content .premierre .upcoming-movie-card .img-layer {
-  height: 300px;
-  width: 240px;
+  height: 250px;
+  width: 180px;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1210,11 +1210,11 @@
 .pages-bcg .movie-premiere-holder .upcoming-content .premierre .upcoming-movie-card h3 {
   color: #f7f7f7;
   position: absolute;
-  margin-top: 200px;
-  width: 220px;
+  margin-top: 100px;
+  width: 150px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 2px;
   text-shadow: 4px 4px 7px #464545;
@@ -1412,6 +1412,7 @@
   width: 100%;
   text-transform: uppercase;
   color: white;
+  font-size: 25px;
   margin: 50px 0 20px 0;
 }
 

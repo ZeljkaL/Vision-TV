@@ -8,7 +8,7 @@ const Premierre = () => {
   return (
     <div id="upcoming-movies" className="upcoming-content">
       <div className="text">
-        <p>#upcoming movies</p> <p>#premierre</p>
+        <p>#upcoming movies</p> <p>#premiere</p>
         <p>#TOP RANKED</p>
         <p>#2021</p>
       </div>
