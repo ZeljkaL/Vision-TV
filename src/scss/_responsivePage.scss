@@ -124,11 +124,17 @@
             width: 100px;
             display: flex;
           }
-          .upcoming-link {
-            margin: 10px;
-            font-size: 15px;
+          .nav-inner-page {
             display: flex;
-            //      color: RED;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            .upcoming-link {
+              margin: 10px;
+              font-size: 15px;
+              display: flex;
+              //      color: RED;
+            }
           }
           h3 {
             display: none;
@@ -136,7 +142,11 @@
         }
         .active {
           background: transparent;
-          flex-direction: row;
+          height: 80px;
+          padding-top: 0;
+          .nav-inner-page {
+            flex-direction: row;
+          }
         }
 
         .slider-content {
@@ -232,10 +242,16 @@
             height: 50px;
             width: 120px;
           }
-          .upcoming-link {
-            margin: 50px;
-            font-size: 18px;
-            // color: rgb(21, 255, 0);
+          .nav-inner-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            .upcoming-link {
+              margin: 50px;
+              font-size: 18px;
+              // color: rgb(21, 255, 0);
+            }
           }
         }
         .slider-content {

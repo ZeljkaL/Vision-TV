@@ -9,10 +9,10 @@
     align-items: center;
     background-image: $bcgMovie;
     width: 100%;
-    height: 200px;
+    height: 300px;
     .layer-over {
       width: 100%;
-      height: 200px;
+      height: 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -54,6 +54,7 @@
         position: sticky;
 
         background: $navBcg;
+        background: transparent;
         display: flex;
         margin: 0 auto;
         margin-top: -60px;
@@ -69,25 +70,28 @@
           z-index: 2;
           display: none;
         }
-        .upcoming-link {
-          display: none;
-          color: white;
-          text-transform: uppercase;
-          text-decoration: none;
-          //  margin: 50px;
-          font-size: 10px;
-          //   background: red;
-          // width: 100%;
-          //   font-family: $titleFont;
-          z-index: 1;
-          &:hover {
-            color: $btnClr;
-            cursor: pointer;
+        .nav-inner-page {
+          .upcoming-link {
+            display: none;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            //  margin: 50px;
+            font-size: 10px;
+            //   background: red;
+            // width: 100%;
+            //   font-family: $titleFont;
+            z-index: 1;
+            &:hover {
+              color: $btnClr;
+              cursor: pointer;
+            }
           }
         }
         h3 {
           color: white;
           font-size: 25px;
+          z-index: 4;
           &:hover {
             cursor: pointer;
             color: $btnClr;
@@ -95,9 +99,49 @@
         }
       }
       .active {
+        height: 500px;
+
+        width: 100%;
+        background: black;
+        //  padding: 50px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .nav-inner-page {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+          //   height: 200px;
+          //   background: red;
+
+          .upcoming-link {
+            display: flex;
+            color: white;
+            margin: 5px;
+            font-size: 15px;
+
+            // z-index: 1;
+            &:hover {
+              color: $btnClr;
+              cursor: pointer;
+            }
+          }
+        }
+        h3 {
+          width: 10%;
+          color: $btnClr;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      /*
+      .active {
         display: flex;
         flex-direction: column-reverse;
-        background: rgba(8, 8, 8, 0.822);
+        background: rgba(8, 8, 8, 0.993);
         height: 900px;
 
         margin-top: 100px;
@@ -117,6 +161,7 @@
           }
         }
       }
+    */
       .slider-content {
         margin: 0 auto;
         width: 70%;

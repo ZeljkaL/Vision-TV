@@ -13,6 +13,7 @@ import {
   IoLogoYoutube,
 } from "react-icons/io";
 const MoviePage = (props) => {
+  window.scrollTo(0, 0);
   const [upcomingMovies] = useContext(UpcomingContext);
   const movie_id = props.match.params.id;
   let mainCast;
@@ -89,20 +90,23 @@ const MoviePage = (props) => {
         <div className="layer-over">
           <div className={isClicked ? "movies-nav active" : "movies-nav"}>
             <img src={logo} alt="logo" />
-            <Link className="upcoming-link" to="/">
-              Home
-            </Link>
-            {upcomingMovies.map((movie) => {
-              return (
-                <Link
-                  key={movie.id}
-                  className="upcoming-link"
-                  to={`/${movie.id}`}
-                >
-                  {movie.title}
-                </Link>
-              );
-            })}
+            <div className="nav-inner-page">
+              {" "}
+              <Link className="upcoming-link" to="/">
+                Home
+              </Link>
+              {upcomingMovies.map((movie) => {
+                return (
+                  <Link
+                    key={movie.id}
+                    className="upcoming-link"
+                    to={`/${movie.id}`}
+                  >
+                    {movie.title}
+                  </Link>
+                );
+              })}
+            </div>
             <h3 onClick={handleClicked}>
               <GiHamburgerMenu />
             </h3>
